@@ -1,12 +1,12 @@
 # Azure-Database-Migration
 
 ## Table of Contents
-Milestone 2 - Set Up the Production Environment
-Milestone 3 - Migrate to Azure SQL Database
-Milestone 4 - Data Backup and Restore
-Milestone 5 - Disaster Recovery Simulation
-Milestone 6 - Geo Replication and Failover
-Milestone 7 - Microsoft Entra Directory Integration
+Milestone 2 - Set Up the Production Environment <br>
+Milestone 3 - Migrate to Azure SQL Database <br>
+Milestone 4 - Data Backup and Restore <br>
+Milestone 5 - Disaster Recovery Simulation <br>
+Milestone 6 - Geo Replication and Failover <br>
+Milestone 7 - Microsoft Entra Directory Integration <br>
 
 ## Description of the Project
 Milestone 2 - Set Up the Production Environment
