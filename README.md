@@ -41,10 +41,10 @@ Utilised SQL Server Management Studio (SSMS) to automate backups in the developm
 
 ## Tools Used
 - [Windows Azure](https://azure.microsoft.com/en-gb) - The Azure cloud platform is more than 200 products that build, run, and manage applications across multiple clouds, on-premises, and at the edge, with the tools and frameworks of your choice.
-- [SQL Server Management Studio] - SQL Server Management Studio is an integrated environment for managing any SQL infrastructure.
-- [Azure Data Studio] - Azure Data Studio is a modern open-source, cross-platform hybrid data analytics tool designed to simplify the data landscape.
-- [Azure VM] - Azure Virtual Machines offers a range of networking capabilities and related services such as Azure Virtual Network, public and private IP addresses, network security groups, virtual private networks (VPN), and Azure ExpressRoute that enable connectivity and security and ensure high availability for your applications.
-- [Azure Storage] - The Azure Storage platform is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers highly available, massively scalable, durable, and secure storage for a variety of data objects in the cloud.
+- [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) - SQL Server Management Studio is an integrated environment for managing any SQL infrastructure.
+- [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall) - Azure Data Studio is a modern open-source, cross-platform hybrid data analytics tool designed to simplify the data landscape.
+- [Azure VM](https://azure.microsoft.com/en-gb/products/virtual-machines) - Azure Virtual Machines offers a range of networking capabilities and related services such as Azure Virtual Network, public and private IP addresses, network security groups, virtual private networks (VPN), and Azure ExpressRoute that enable connectivity and security and ensure high availability for your applications.
+- [Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction) - The Azure Storage platform is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers highly available, massively scalable, durable, and secure storage for a variety of data objects in the cloud.
 
 ## Description of the Project
 ### Set Up the Production Environment
