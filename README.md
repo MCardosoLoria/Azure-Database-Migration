@@ -110,9 +110,9 @@ Verify that the restored database is accessible and operational in the Azure VM 
 
 Open SSMS and connect to the SQL Server. In the Object Explorer, right-click on the SQL Server Agent node and then click Start. Press Yes to proceed past the prompt ‘Are you sure you want to start the SQL Server Agent?’ and expand the SQL Server Agent node. Create SQL Server Credentials by right-clicking the Server Name and selecting New Query then execute the following T-SQL command to create the credentials:
 
-CREATE CREDENTIAL [YourCredentialName]   <br>
-WITH IDENTITY = '[Your Azure Storage Account Name]', <br>
-SECRET = 'Access Key'; <br>
+      CREATE CREDENTIAL [YourCredentialName]   <br>
+      WITH IDENTITY = '[Your Azure Storage Account Name]', <br>
+      SECRET = 'Access Key'; <br>
 
 Find the Access keys by navigating to Security + Networking > Access Keys, then the SQL Server Credentials will be showing under Security > Credentials. In the Object Explorer, expand the Management node, right-click on Maintenance Plans and select Maintenance Plan Wizard. Fill in the details for the name of the plan and the description. Set up a weekly back up by clicking Change on the schedule and click Next to continue. Select Back Up Database (Full) to configure the backup task, then click Next. In the Back Up Database Task, select the databases you want to back up and choose URL as the backup destination. In the Destination tab, you will first have to select the SQL Server Credentials from a drop-down list, here you should select the credentials you have provisioned to access the Azure Storage Account. Fill in the details for the Azure Storage Container including the name of the container that the backups should be uploaded to. Click Next until the final page and click Finish to create a maintenance plan.
 
@@ -124,12 +124,12 @@ Refresh the Maintenance Plans node to see the newly created plan, test it by rig
 
 Open Azure Data Studio on the production VM and identify the previous Azure SQL Database. Open a query window by right-clicking on the production database and selecting New Query, select all the entries in the Database’s table and click Run to execute it. Scroll down in the Results and observe the number of entries in the table, write and execute SQL queries to intentionally delete or corrupt specific data:
 
--- Intentional Deletion <br>
-DELETE TOP (100) <br>
-FROM dbo.[table_name]; <br>
--- Data Corruption <br>
-UPDATE TOP (100) dbo.[table_name] <br>
-SET product_price = NULL <br>
+      -- Intentional Deletion <br>
+      DELETE TOP (100) <br>
+      FROM dbo.[table_name]; <br>
+      -- Data Corruption <br>
+      UPDATE TOP (100) dbo.[table_name] <br>
+      SET product_price = NULL <br>
 
 Verify the data loss by querying the affected table to ensure that the data has been intentionally deleted or corrupted. For example, use the query that deleted the first 100 rows in the table.
 
@@ -156,9 +156,9 @@ Locate the SQL Server under the Security section, click Microsoft Entre, click S
 #### Create DB Reader User
 
 Create a new user with the name DB_Reader with a password using the ‘Let me create the password’ field. Open Azure Data Studio and connect to the database using the Microsoft Entra Admin details, right-click on the server and select New Query. Run the following SQL query to grant db_datareader role to the DB_Reader:
-
-CREATE USER [DB_Reader@yourdomain.com] FROM EXTERNAL PROVIDER; <br>
-ALTER ROLE db_datareader ADD MEMBER [DB_Reader@yourdomain.com]; <br>
+      
+      CREATE USER [DB_Reader@yourdomain.com] FROM EXTERNAL PROVIDER; <br>
+      ALTER ROLE db_datareader ADD MEMBER [DB_Reader@yourdomain.com]; <br>
 
 To verify the connection, re-connect to the Azure SQL Server by double-clicking it, right-clicking on the server name and selecting Edit Connection. Here, under Account, click Add Account and fill in the details for the login, also creating a new password and click Connect. Verify the user’s read-only access by right-clicking one of the tables and selecting Select Top 1000 to receive the correct output.
 
