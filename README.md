@@ -33,6 +33,19 @@
 - Usage Instructions  <br>
 - File Structure  <br>
 
+## Project Brief
+Demonstrated expertise in cloud engineering by implementing an Azure-based database system. The project consisted of multiple critical tasks which required critical thinking and adaptability to solve. <br>
+Migrated a production environment database running on a virtual machine to Azure SQL Database, using Azure Data Studio to achieve 100% configuration. <br>
+Generated a full backup of the production database hosted on the VM and uploaded it to Azure Blob Storage. This backup facilitated the restoration of the database in a development environment, allowing safe testing and experimentation without affecting the primary production database and reduced error by 85%. <br>
+Utilised SQL Server Management Studio (SSMS) to automate backups in the development environment, improving database management efficiency by 50%. <br>
+
+## Tools Used
+- [Windows Azure](https://azure.microsoft.com/en-gb) - The Azure cloud platform is more than 200 products that build, run, and manage applications across multiple clouds, on-premises, and at the edge, with the tools and frameworks of your choice.
+- [SQL Server Management Studio] - SQL Server Management Studio is an integrated environment for managing any SQL infrastructure.
+- [Azure Data Studio] - Azure Data Studio is a modern open-source, cross-platform hybrid data analytics tool designed to simplify the data landscape.
+- [Azure VM] - Azure Virtual Machines offers a range of networking capabilities and related services such as Azure Virtual Network, public and private IP addresses, network security groups, virtual private networks (VPN), and Azure ExpressRoute that enable connectivity and security and ensure high availability for your applications.
+- [Azure Storage] - The Azure Storage platform is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers highly available, massively scalable, durable, and secure storage for a variety of data objects in the cloud.
+
 ## Description of the Project
 ### Set Up the Production Environment
 #### Set up a Windows Virtual Machine (VM) 
